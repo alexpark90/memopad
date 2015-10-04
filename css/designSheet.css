@@ -1,0 +1,121 @@
+/*
+    Name:  Alex Park
+    Assignment:  Assignment 1
+    Date:  Feb. 01. 2015
+    
+*/
+
+html, body {
+    width: 100%;
+    margin: 0px;
+    font-size: 18px;
+    text-align: center;
+}
+
+header {
+    width: 80%;
+    padding: 0%;
+    margin: 0 auto;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+fieldset {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    border : 1px solid black;
+    box-sizing: border-box;
+}
+
+#control{
+    border: 0px;
+    margin-bottom: 1%;
+}
+
+ul{
+    margin: 1%;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin: 0px;
+}
+
+textarea {
+    background-color: #FFFF66;
+    width: 100%;
+    margin: 0px auto;
+    border: solid #CC9900 2px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: black;
+    font-family: sans-serif;
+    resize: none;
+}
+
+select {
+    background-color: grey;
+    width: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+input[type=number] {
+    background-color: lightblue;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 17px;
+    text-align: right;
+}
+
+
+input[type=color] {
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+
+#apply {
+    width: 100%;
+    padding: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+input[type=range] {
+    width: 40%;
+}
+
+input[type=button] {
+    width: 20%;
+    padding: 1%;
+    margin-right: 2%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#previous, #next {
+    width: 10%;
+}
+
+footer {
+    text-align: right;
+    padding: 2%;
+    padding-top: 0;
+}

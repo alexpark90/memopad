@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+    Name:  Alex Park
+    Assignment:  Assignment 1
+    Date:  Feb. 01. 2015
+    
+    App Description: This application contains the memo pad. 
+    It stores the text memo into the user's localStorage.
+    Also, It uses appcache so the user can access this app offline as well.
+
+    Page Description: This is the main page.
+    Files: designsheet.css - The main design for this application.
+    main.js - The javascript code that support functions that used in index.html file.
+-->
+<html manifest="cache.appcache">
+    <head>
+        <title>In-Class Exercise 2 </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/designSheet.css">
+        <script type="text/javascript" src="scripts/main.js">
+    </script>
+    </head>
+    <body onload="reload();">
+        <header>
+            <p>Alex's Memo Pad</p>
+        </header>
+        <article>
+            <fieldset>
+                <legend><h3>Font</h3></legend>
+                <ul>
+                    <li>Type
+                        <select>
+                            <option>Sans-serif</option>
+                            <option>Serif</option>
+                            <option>Monospace</option>
+                            <option>Georgia</option>
+                            <option>Times New Roman</option>
+                        </select>
+                    </li>
+                    <li>Size <input type="number" value="16" min="10" max="100"></li>
+                    <li>Color <input type="color" name="" value="black"></li>
+                    <li><input type="button" id="apply" value="Apply" onclick="changeFont();"></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend><h3>Write memo here</h3></legend>
+                <textarea rows="10" placeholder="Type here any memo."></textarea>
+            </fieldset>
+            <fieldset id="control">
+                <input type="button" id="previous" value="<"  title="" onclick="move(this);">
+                <input type="range" step="1" min="1" max="50" value="1"  title="1" onmouseup="throughPage();">
+                <input type="button" id="next" value=">" title="move to page 2" onclick="move(this);">
+                <br /><br />
+                <input type="button" value="Save" onclick="save();">
+                <input type="button" value="Cancel" onclick="cancel();">               
+            </fieldset>
+        </article>
+        <footer>
+            2015 &copy Alex Yeji Park
+        </footer>
+    </body>
+</html>
